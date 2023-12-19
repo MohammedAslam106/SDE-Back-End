@@ -9,7 +9,7 @@ mongoose.connect(`${process.env.MONGODB_URL}`).then(res=>console.log('mongodb co
 const server=express()
 server.use(express.json())
 server.use(cors())
-server.use('/api',apiRoutes)
+server.use('/route',apiRoutes)
 
 
 server.listen(process.env.PORT ?? 3001,()=>{
